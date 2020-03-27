@@ -2,7 +2,6 @@ const express = require('express')
 const request = require('request')
 const app = express()
 const port = 3000
-const fs = require('fs')
 const baseUrl = 'https://covid19.mathdro.id/api'
 
 app.get('/ping', (req, res) => res.send('pong'))
