@@ -1,0 +1,11 @@
+{
+  "name": "siri-shortcuts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Paolo Rufrano",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "request": "^2.88.2"
+  }
+}
