@@ -2,14 +2,14 @@ const express = require('express')
 const request = require('request')
 const app = express()
 const port = 3000
-const baseUrl = 'https://corona.lmao.ninja'
+const baseUrl = 'https://disease.sh'
 
 app.get('/ping', (req, res) => res.send('pong'))
 
 app.get('/covid/:iso3/:segment', (req, res) => {
 
     let segment = req.params.segment
-    let endpoint = `${baseUrl}/countries/${req.params.iso3}`
+    let endpoint = `${baseUrl}/v2/countries/${req.params.iso3}`
 
     request({ url: endpoint }, (error, response, body) => {
             if (error || response.statusCode !== 200) {
